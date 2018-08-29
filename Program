@@ -1,0 +1,26 @@
+#include<stdio.h>
+int a=0;
+int b=0;
+int c=0;
+void input()
+{
+printf("Enter the three numbers: \n");
+scanf("%d%d%d",&a,&b,&c);
+}
+void greatest_number()
+{
+if(a>b&&a>c)
+{printf("The greater number is: %d \n",a);}
+else if(b>a&&b>c)
+{printf("The greater number is: %d \n",b);}
+else if(c>a&&c>b)
+{printf("The greatest number is: %d \n",c);}
+else
+{printf("All the numbers are equal");}
+}
+void main()
+{
+input();
+greatest_number();
+getch();
+}
